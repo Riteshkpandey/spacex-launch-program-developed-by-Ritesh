@@ -1,0 +1,118 @@
+body {
+  background-color: #f2f2f2;
+}
+.main-container {
+  padding: 10px 30px 10px;
+}
+.main-header {
+  margin-bottom: 40px;
+}
+.content-container {
+  display: flex;
+}
+.filter-area {
+  height: 695px;
+  background-color: white;
+  width: 280px;
+  border-radius: 8px;
+}
+.filter-section-title {
+  padding-bottom: 5px;
+  margin: 5px 0 25px;
+  width: 75%;
+  font-size: 17px;
+  border-bottom: 2px solid #c4bdbb;
+  display: inline-block;
+}
+.filter-section {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: minmax(25%, auto) minmax(25%, auto);
+  justify-content: space-between;
+  padding: 0 10px 5px;
+  grid-gap: 15px;
+}
+.button {
+  font-size: 15px;
+  outline: none;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #c5e09b;
+}
+.button-active {
+  font-size: 15px;
+  outline: none;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #7cba01;
+}
+.shuttle-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.shuttle-data {
+  padding: 15px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-radius: 0px;
+  background-color: white;
+  height: 500px;
+  width: 250px;
+}
+
+.shuttle-badge {
+  background-color: #f2f2f2;
+  height: 50%;
+}
+
+.shuttle-card-text-main {
+  color: #376bb0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.shuttle-card-text {
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.shuttle-info {
+  text-align: left;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shuttle-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .shuttle-data {
+    margin-left: 0px;
+  }
+
+  .filter-area {
+    margin-bottom: 20px;
+  }
+}
